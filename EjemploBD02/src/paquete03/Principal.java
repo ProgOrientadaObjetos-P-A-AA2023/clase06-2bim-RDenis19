@@ -14,16 +14,26 @@ import paquete02.Auto;
  * @author reroes
  */
 public class Principal {
-    public static void main(String[] args) throws SQLException {
-        Enlace c = new Enlace();
+
+    public static void main(String[] args) {
+        
+        String[][] autos = {{"LBC0001", "230.2"},
+        {"LBC0002", "330.2"},
+        {"LBC0003", "430.2"},
+        {"LBC0004", "530.1"},
+        {"LBC0005", "130,2"},};
+
+        // 1. guardar en la tabla autos de la base de datos
+        Enlace e = new Enlace();
         Auto a = new Auto();
-        a.establecerPlaca("LBNS0001");
-        a.establecerValorMatricula(200.2);
         
-        c.insertarAuto(a);
-        
-        for (int i = 0; i < c.obtenerDataAuto().size(); i++) {
-            System.out.printf("%s\n", c.obtenerDataAuto().get(i));
+        for (int i = 0; i < obtenerDataAuto.length; i++) {
+            a.establecerPlaca(autos[i][1]);
+            a.establecerValorMatricula(Double.persevalorMatricula);
+            
+            e.insertarAuto(auto);
         }
+        // 2. Presentar todos los registros de la tabla autos de la base de datos
+        
     }
 }

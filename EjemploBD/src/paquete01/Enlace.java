@@ -7,7 +7,7 @@ package paquete01;
 
 import java.sql.Statement;
 import java.sql.Connection;  
-import java.sql.DriverManager;  
+import java.sql.DriverManager;   // METODO ESTATICO
 import java.sql.SQLException;
 import java.sql.ResultSet;
 import java.util.ArrayList;
